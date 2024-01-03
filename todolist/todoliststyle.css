@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial black;
+    font-size: 15px;
+}.container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(to right,#e3e6e4,#85d49f,#30e66d);
+    display: flex;
+    justify-content: center;
+
+    
+}
+.todo-app{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 50px;
+    position: relative;
+}
+.todo-app h1{
+    color:#30e66d;
+    font-size: 25px;
+
+}
+.todo-icon{
+    position: absolute;
+    height: 70px;
+    top: 3px;
+    left: 200px;
+}
+.fields{
+    height: 40px;
+    width: 100%;
+    background-color:rgb(228, 221, 221);
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.fields input{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15;
+}
+.fields button{
+    width: 28%;
+    font-size: 13px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #bcebdb;
+    cursor: pointer;
+}
+.task-list{
+    margin-top: 20px;
+}
+.task-list li{
+    padding: 10px 20px 2px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+.task-list li::before{
+    content: "";
+    background-image: url(https://cdn-icons-png.flaticon.com/128/481/481078.png);
+    height: 18px;
+    width: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -6px;
+    top:8px;
+}
+.task-list li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+.task-list li.checked::before{
+    background-image: url();
+    height: 20px;
+    width: 20px;
+}
+    
