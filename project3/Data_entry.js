@@ -139,7 +139,10 @@ function deleteData(btn){
     // console.log(btn.parentElement.parentElement)
     // console.log(btn.parentElement.parentElement.parentElement)
     // console.log(btn.parentElement.parentElement.rowIndex)
+
+    if(confirm("Are you sure?")){
     document.getElementById(
         "tablebody").deleteRow(btn.parentElement.parentElement.rowIndex-1);
+    }
 
 }
